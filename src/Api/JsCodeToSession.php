@@ -21,7 +21,7 @@ class JsCodeToSession extends BaseApi
      * @param $code
      * @return $this
      */
-    public function getSesson($code)
+    public function getSession($code)
     {
         $this->jsCode = $code;
         $params = [
@@ -32,6 +32,4 @@ class JsCodeToSession extends BaseApi
         ];
         return $this->post($params);
     }
-
-
 }
